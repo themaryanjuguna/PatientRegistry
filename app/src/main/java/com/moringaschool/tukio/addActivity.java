@@ -59,10 +59,9 @@ public class addActivity extends AppCompatActivity {
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 String name = mName.getText().toString();
                 Log.d(TAG, name);
-                //String conditionType = mConditionType.getText().toString();
-                //Log.d(TAG,conditionType);
                 String conditionName = mConditionName.getText().toString();
                 Log.d(TAG,conditionName);
                 String county= mCounty.getText().toString();
@@ -70,16 +69,24 @@ public class addActivity extends AppCompatActivity {
                 String diagnosisCentre = mDiagnosisCentre.getText().toString();
                 Log.d(TAG,diagnosisCentre);
                 String condition = autoComplete.getText().toString();
+                //Log.d(TAG,condition);
 
+                if(
+                        name.equals("") || conditionName.equals("") || condition.equals("") || county.equals("") || diagnosisCentre.equals(""))
+                {
+                    Toast.makeText(addActivity.this,"FIELDS CANNOT BE EMPTY",Toast.LENGTH_SHORT).show();
+                }else {
 
-                Intent intent = new Intent(addActivity.this, RegistrationActivity.class);
-                intent.putExtra("name", name);
-                //intent.putExtra("conditionType", conditionType);
-                intent.putExtra("conditionName", conditionName);
-                intent.putExtra("county", county);
-                intent.putExtra("diagnosisCentre", diagnosisCentre);
-                intent.putExtra("condition", condition);
-                startActivity(intent);
+                    Intent intent = new Intent(addActivity.this, RegistrationActivity.class);
+                    intent.putExtra("name", name);
+                    //intent.putExtra("conditionType", conditionType);
+                    intent.putExtra("conditionName", conditionName);
+                    intent.putExtra("county", county);
+                    intent.putExtra("diagnosisCentre", diagnosisCentre);
+                    intent.putExtra("condition", condition);
+                    startActivity(intent);
+
+                }
             }
         });
 
