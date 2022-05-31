@@ -44,8 +44,7 @@ public class addActivity extends AppCompatActivity {
                 String diagnosisCentre = mDiagnosisCentre.getText().toString();
                 Log.d(TAG,diagnosisCentre);
 
-
-                Intent intent = new Intent(addActivity.this, RegistationActivity.class);
+                Intent intent = new Intent(addActivity.this, RegistrationActivity.class);
                 startActivity(intent);
             }
         });

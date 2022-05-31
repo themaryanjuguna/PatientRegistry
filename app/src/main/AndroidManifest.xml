@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Tukio"
         tools:targetApi="31">
         <activity
-            android:name=".RegistationActivity"
+            android:name=".RegistrationActivity"
             android:exported="false"
             android:parentActivityName=".addActivity"
             android:label="Registration Successful"/>
