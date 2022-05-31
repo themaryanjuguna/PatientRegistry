@@ -7,11 +7,52 @@
     tools:context=".RegistrationActivity">
 
     <TextView
+        android:id="@+id/applicantsname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Applicants Name:"
-        android:id="@+id/applicantsname"
+        android:textSize="16sp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/conditiontype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition Type:"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/conditionname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condition Name:"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/county"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applicants Name:"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/diagnosiscentre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Applicants Name:"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
 
 </RelativeLayout>
