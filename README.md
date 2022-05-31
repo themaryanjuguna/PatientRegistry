@@ -2,13 +2,13 @@
 #### By **Maryanne Njũgũna**
 
 ## Description of program
-*
+Patient Registry is an Android App with an objective of registering patients living with rare conditons
 
-## Program setup instructions
-*
 
-## Link to live version of the site
-*
+## Prerequisites
+* Android Studio IDE
+* SDKMan - To handle different java versions. 
+* Java 11
 
 ## Setup/Installation Requirements
 * Internet connection
@@ -19,10 +19,9 @@
 ## Known Bugs
 Report any bugs by hovering to https://github.com/themaryanjuguna/trackerApp/issues and create a new issue.
 
-
 ## Author Details
 Maryanne Njũgũna [Linktree Profile](https://linktr.ee/themaryanjuguna)
 
 ### License
-Licensed by MIT
+Licensed by MIT [View Here] (https://github.com/themaryanjuguna/trackerApp/blob/a7f8fd733e9d7d843c3b36a4a2198fb1d157650a/Licence)
 Copyright (c) 2022 **themaryanjuguna**
