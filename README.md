@@ -2,7 +2,7 @@
 #### By **Maryanne Njũgũna**
 
 ## Description of program
-Patient Registry is an Android App with an objective of registering patients living with rare conditons
+Patient Registry is an Android App with an objective of registering patients living with rare conditons in Kenya,
 
 
 ## Prerequisites
@@ -23,5 +23,5 @@ Report any bugs by hovering to https://github.com/themaryanjuguna/trackerApp/iss
 Maryanne Njũgũna [Linktree Profile](https://linktr.ee/themaryanjuguna)
 
 ### License
-Licensed by MIT [View Here] (https://github.com/themaryanjuguna/trackerApp/blob/a7f8fd733e9d7d843c3b36a4a2198fb1d157650a/Licence)
+Licensed by MIT [View Here](https://github.com/themaryanjuguna/trackerApp/blob/a7f8fd733e9d7d843c3b36a4a2198fb1d157650a/Licence)
 Copyright (c) 2022 **themaryanjuguna**
