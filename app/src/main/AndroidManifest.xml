@@ -14,10 +14,19 @@
         android:theme="@style/Theme.Tukio"
         tools:targetApi="31">
         <activity
+            android:name=".splashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".RegistrationActivity"
             android:exported="false"
-            android:parentActivityName=".addActivity"
-            android:label="Registration Successful"/>
+            android:label="Registration Successful"
+            android:parentActivityName=".addActivity" />
         <activity
             android:name=".addActivity"
             android:exported="false"
@@ -27,11 +36,6 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="Patient Registry">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
