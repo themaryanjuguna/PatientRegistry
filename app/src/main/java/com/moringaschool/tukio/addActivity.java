@@ -23,7 +23,7 @@ public class addActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
-        /*mName = (EditText) findViewById(R.id.name);
+        mName = (EditText) findViewById(R.id.name);
         mConditionType = (EditText) findViewById(R.id.conditiontype);
         mConditionName = (EditText) findViewById(R.id.conditionname);
         mCounty = (EditText) findViewById(R.id.county);
@@ -49,6 +49,6 @@ public class addActivity extends AppCompatActivity {
             }
         });
 
-*/
+
     }
 }
