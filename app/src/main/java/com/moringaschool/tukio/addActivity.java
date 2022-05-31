@@ -8,10 +8,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.ArrayList;
 
 public class addActivity extends AppCompatActivity {
     public static final String TAG = addActivity.class.getSimpleName();
@@ -22,6 +27,12 @@ public class addActivity extends AppCompatActivity {
     private EditText mDiagnosisCentre;
     private Button mRegisterBtn;
 
+    TextInputLayout dropdown;
+    AutoCompleteTextView autoComplete;
+
+    ArrayList<String> arrayList_conditions;
+    ArrayAdapter<String> arrayAdapter_conditions;
+
     //Drop down arraylist
     Spinner spinner;
     String[] data = {"Select one","Neuro Related","Heart Related","Breathing Related","Digestive Related","Genetics Related","Muscular Related", "Nervous Related"};
@@ -31,34 +42,20 @@ public class addActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+
+        dropdown=(TextInputLayout)findViewById(R.id.dropdown);
+        autoComplete=(AutoCompleteTextView) findViewById(R.id.autoComplete);
+
+        ArrayAdapter type = new ArrayAdapter(addActivity.this, android.R.layout.simple_dropdown_item_1line,data);
+        autoComplete.setAdapter(type);
+
+
         mName = (EditText) findViewById(R.id.name);
         //mConditionType = (EditText) findViewById(R.id.conditionType);
         mConditionName = (EditText) findViewById(R.id.conditionName);
         mCounty = (EditText) findViewById(R.id.county);
         mDiagnosisCentre = (EditText) findViewById(R.id.diagnosisCentre);
         mRegisterBtn = (Button) findViewById(R.id.registerBtn);
-
-        spinner = findViewById(R.id.spinner);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_spinner_item,data);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinner.setAdapter(adapter);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-               // Toast.makeText(getApplicationContext(),parent.getItemAtPosition(position).toString(),Toast.LENGTH_SHORT).show();
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +70,8 @@ public class addActivity extends AppCompatActivity {
                 Log.d(TAG,county);
                 String diagnosisCentre = mDiagnosisCentre.getText().toString();
                 Log.d(TAG,diagnosisCentre);
+                String condition = autoComplete.getText().toString();
+
 
                 Intent intent = new Intent(addActivity.this, RegistrationActivity.class);
                 intent.putExtra("name", name);
@@ -80,6 +79,7 @@ public class addActivity extends AppCompatActivity {
                 intent.putExtra("conditionName", conditionName);
                 intent.putExtra("county", county);
                 intent.putExtra("diagnosisCentre", diagnosisCentre);
+                intent.putExtra("condition", condition);
                 startActivity(intent);
             }
         });
