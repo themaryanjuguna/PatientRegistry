@@ -29,19 +29,19 @@ public class RegistrationActivity extends AppCompatActivity {
         mDiagnosisCentreTV = (TextView) findViewById(R.id.diagnosisCentreTV);
 
         Intent intent = getIntent();
-        String applicantsName = intent.getStringExtra("applicantsName");
+        String applicantsName = intent.getStringExtra("name");
         mApplicantsName.setText("Applicants Name: " + applicantsName);
 
-        String conditionTypeTV = intent.getStringExtra("conditionTypeTV");
-        mConditionTypeTV.setText("Type of Condition: " + conditionTypeTV);
+        /*String conditionTypeTV = intent.getStringExtra("conditionTypeTV");
+        mConditionTypeTV.setText("Type of Condition: " + conditionTypeTV);*/
 
-        String conditionNameTV = intent.getStringExtra("conditionNameTV");
+        String conditionNameTV = intent.getStringExtra("conditionName");
         mConditionNameTV.setText("Name of the Condition: " + conditionNameTV);
 
-        String countyTV = intent.getStringExtra("countyTV");
+        String countyTV = intent.getStringExtra("county");
         mCountyTV.setText("County of Origin " + countyTV);
 
-        String diagnosisCentreTV = intent.getStringExtra("diagnosisCentreTV");
+        String diagnosisCentreTV = intent.getStringExtra("diagnosisCentre");
         mDiagnosisCentreTV.setText("Name of Diagnosis: " + diagnosisCentreTV);
 
 

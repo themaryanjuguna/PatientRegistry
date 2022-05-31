@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="8dp"
     android:padding="8dp"
-    tools:context="com.moringaschool.tukio.RegistrationActivity">
+    tools:context=".RegistrationActivity">
 
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginTop="12dp"
         android:padding="12dp"
         android:layout_margin="12dp"
-        android:text="Register Here"
+        android:text="Registration was Successful!"
         android:textColor="@color/white"
         android:background="#E91E63"
         android:textSize="16sp"
