@@ -1,4 +1,4 @@
-package com.moringaschool.tukio;
+package com.maryannenjuguna.PatientRegistry;
 
 import androidx.appcompat.app.AppCompatActivity;
 
