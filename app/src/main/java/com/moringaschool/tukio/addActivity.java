@@ -24,32 +24,32 @@ public class addActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
         mName = (EditText) findViewById(R.id.name);
-        mConditionType = (EditText) findViewById(R.id.conditiontype);
-        mConditionName = (EditText) findViewById(R.id.conditionname);
+        mConditionType = (EditText) findViewById(R.id.conditionType);
+        mConditionName = (EditText) findViewById(R.id.conditionName);
         mCounty = (EditText) findViewById(R.id.county);
-        mDiagnosisCentre = (EditText) findViewById(R.id.diagnosiscentre);
-        mRegisterBtn = (Button) findViewById(R.id.registerbtn);
+        mDiagnosisCentre = (EditText) findViewById(R.id.diagnosisCentre);
+        mRegisterBtn = (Button) findViewById(R.id.registerBtn);
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = mName.getText().toString();
-                Log.d(TAG, name);
+                //*Log.d(TAG, name);
                 String conditionType = mConditionType.getText().toString();
-                Log.d(TAG,conditionType);
+                //Log.d(TAG,conditionType);
                 String conditionName = mConditionName.getText().toString();
-                Log.d(TAG,conditionName);
+                //Log.d(TAG,conditionName);
                 String county= mCounty.getText().toString();
-                Log.d(TAG,county);
+                //Log.d(TAG,county);
                 String diagnosisCentre = mDiagnosisCentre.getText().toString();
-                Log.d(TAG,diagnosisCentre);
+                //Log.d(TAG,diagnosisCentre);
 
                 Intent intent = new Intent(addActivity.this, RegistrationActivity.class);
                 intent.putExtra("name", name);
-                intent.putExtra("conditiontype", conditionType);
-                intent.putExtra("conditionname", conditionName);
+                intent.putExtra("conditionType", conditionType);
+                intent.putExtra("conditionName", conditionName);
                 intent.putExtra("county", county);
-                intent.putExtra("diagnosiscentre", diagnosisCentre);
+                intent.putExtra("diagnosisCentre", diagnosisCentre);
                 startActivity(intent);
             }
         });

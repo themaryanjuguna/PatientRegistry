@@ -38,7 +38,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/conditiontype"
+        android:id="@+id/conditionType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/name"
@@ -55,10 +55,10 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/conditionname"
+        android:id="@+id/conditionName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/conditiontype"
+        android:layout_below="@+id/conditionType"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -75,7 +75,7 @@
         android:id="@+id/county"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/conditionname"
+        android:layout_below="@+id/conditionName"
         android:layout_centerHorizontal="true"
         android:padding="12dp"
         android:inputType="text"
@@ -86,7 +86,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/diagnosiscentre"
+        android:id="@+id/diagnosisCentre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/county"
@@ -101,10 +101,10 @@
         tools:ignore="TextViewEdits" />
 
     <Button
-        android:id="@+id/registerbtn"
+        android:id="@+id/registerBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/diagnosiscentre"
+        android:layout_below="@+id/diagnosisCentre"
         android:layout_centerHorizontal="true"
         android:padding="16dp"
         android:layout_margin="16dp"
