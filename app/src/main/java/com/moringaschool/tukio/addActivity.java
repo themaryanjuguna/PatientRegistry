@@ -45,6 +45,11 @@ public class addActivity extends AppCompatActivity {
                 Log.d(TAG,diagnosisCentre);
 
                 Intent intent = new Intent(addActivity.this, RegistrationActivity.class);
+                intent.putExtra("name", name);
+                intent.putExtra("conditiontype", conditionType);
+                intent.putExtra("conditionname", conditionName);
+                intent.putExtra("county", county);
+                intent.putExtra("diagnosiscentre", diagnosisCentre);
                 startActivity(intent);
             }
         });

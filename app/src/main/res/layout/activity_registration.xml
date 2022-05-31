@@ -4,54 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:padding="8dp"
     tools:context=".RegistrationActivity">
 
     <TextView
         android:id="@+id/applicantsname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:layout_margin="4dp"
         android:text="Applicants Name:"
         android:textSize="16sp"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
 
     <TextView
-        android:id="@+id/conditiontype"
+        android:id="@+id/conditiontypeTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/applicantsname"
+        android:padding="12dp"
+        android:layout_margin="4dp"
         android:text="Condition Type:"
         android:textSize="16sp"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
 
     <TextView
-        android:id="@+id/conditionname"
+        android:id="@+id/conditionnameTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/conditiontypeTV"
+        android:padding="12dp"
+        android:layout_margin="4dp"
         android:text="Condition Name:"
         android:textSize="16sp"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
 
     <TextView
-        android:id="@+id/county"
+        android:id="@+id/countyTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Applicants Name:"
+        android:layout_below="@+id/conditionnameTV"
+        android:padding="12dp"
+        android:layout_margin="4dp"
+        android:text="Applicants County:"
         android:textSize="16sp"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
     <TextView
-        android:id="@+id/diagnosiscentre"
+        android:id="@+id/diagnosiscentreTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Applicants Name:"
+        android:layout_below="@+id/countyTV"
+        android:padding="12dp"
+        android:layout_margin="4dp"
+        android:text="Name of Diagnosis Centre:"
         android:textSize="16sp"
-        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         />
 
