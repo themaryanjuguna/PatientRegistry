@@ -32,8 +32,8 @@ public class RegistrationActivity extends AppCompatActivity {
         String applicantsName = intent.getStringExtra("name");
         mApplicantsName.setText("Applicants Name: " + applicantsName);
 
-        String condition = intent.getStringExtra("condition");
-        mConditionTypeTV.setText("Type of Condition: " + condition);
+        String conditionTV = intent.getStringExtra("condition");
+        mConditionTypeTV.setText("Type of Condition: " + conditionTV);
 
         String conditionNameTV = intent.getStringExtra("conditionName");
         mConditionNameTV.setText("Name of the Condition: " + conditionNameTV);

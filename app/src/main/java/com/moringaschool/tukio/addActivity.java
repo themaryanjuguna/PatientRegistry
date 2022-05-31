@@ -34,7 +34,6 @@ public class addActivity extends AppCompatActivity {
     ArrayAdapter<String> arrayAdapter_conditions;
 
     //Drop down arraylist
-    Spinner spinner;
     String[] data = {"Select one","Neuro Related","Heart Related","Breathing Related","Digestive Related","Genetics Related","Muscular Related", "Nervous Related"};
 
 
