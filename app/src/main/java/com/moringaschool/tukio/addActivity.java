@@ -28,6 +28,7 @@ public class addActivity extends AppCompatActivity {
         mConditionName = (EditText) findViewById(R.id.conditionname);
         mCounty = (EditText) findViewById(R.id.county);
         mDiagnosisCentre = (EditText) findViewById(R.id.diagnosiscentre);
+        mRegisterBtn = (Button) findViewById(R.id.registerbtn);
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
