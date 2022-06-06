@@ -2,7 +2,7 @@
 #### By **Maryanne Njũgũna**
 
 ## Description of program
-Patient Registry is an Android App with an objective of registering patients living with rare conditions in Kenya,
+Patient Registry is an Android App with an objective of registering patients living with rare conditions in Kenya. Future Developments will include patients in a particular region with the similar conditions can form a Patient Support Group, thus will have a Support Group Directory.
 
 
 ## Prerequisites
