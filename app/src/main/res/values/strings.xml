@@ -2,4 +2,5 @@
     <string name="app_name">Patient Registry</string>
     <string name="notes">Fill in the below</string>
     <string name="add_patient">Add Patient</string>
+    <string name="intru">Karibu! You are not alone, by providing your data below, we are able to map out other patients living with the same condition as you in a particular region in Kenya.</string>
 </resources>
