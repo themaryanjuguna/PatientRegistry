@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
@@ -18,15 +17,20 @@ import java.util.ArrayList;
 
 public class addActivity extends AppCompatActivity {
     public static final String TAG = addActivity.class.getSimpleName();
-    private EditText mName;
-    //private EditText mConditionType;
-    private EditText mConditionName;
-    private EditText mCounty;
-    private EditText mDiagnosisCentre;
+    private TextInputLayout mName;
+    private TextInputLayout mConditionName;
+    private TextInputLayout dropdown;
+    private TextInputLayout mCounty;
+    private TextInputLayout mDiagnosisCentre;
     private Button mRegisterBtn;
 
-    TextInputLayout dropdown;
-    AutoCompleteTextView autoComplete;
+
+    AutoCompleteTextView autoCompleteCondition;
+    AutoCompleteTextView autoCompleteName;
+    AutoCompleteTextView countyAC;
+    AutoCompleteTextView conditionNameAC;
+    AutoCompleteTextView diagnosisCentreAC;
+
 
     ArrayList<String> arrayList_conditions;
     ArrayAdapter<String> arrayAdapter_conditions;
@@ -41,32 +45,39 @@ public class addActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add);
 
         dropdown=(TextInputLayout)findViewById(R.id.dropdown);
-        autoComplete=(AutoCompleteTextView) findViewById(R.id.autoComplete);
+        autoCompleteCondition=(AutoCompleteTextView) findViewById(R.id.autoCompleteCondition);
 
         ArrayAdapter type = new ArrayAdapter(addActivity.this, android.R.layout.simple_dropdown_item_1line,data);
-        autoComplete.setAdapter(type);
+        autoCompleteCondition.setAdapter(type);
 
 
-        mName = (EditText) findViewById(R.id.name);
-        //mConditionType = (EditText) findViewById(R.id.conditionType);
-        mConditionName = (EditText) findViewById(R.id.conditionName);
-        mCounty = (EditText) findViewById(R.id.county);
-        mDiagnosisCentre = (EditText) findViewById(R.id.diagnosisCentre);
+        mName = (TextInputLayout) findViewById(R.id.name);
+        autoCompleteName=(AutoCompleteTextView) findViewById(R.id.autoCompleteName);
+
+        mConditionName = (TextInputLayout) findViewById(R.id.conditionName);
+        conditionNameAC=(AutoCompleteTextView) findViewById(R.id.conditionNameAC);
+
+        mCounty = (TextInputLayout) findViewById(R.id.county);
+        countyAC=(AutoCompleteTextView) findViewById(R.id.countyAC);
+
+        mDiagnosisCentre = (TextInputLayout) findViewById(R.id.diagnosisCentre);
+        diagnosisCentreAC=(AutoCompleteTextView) findViewById(R.id.diagnosisCentreAC);
+
         mRegisterBtn = (Button) findViewById(R.id.registerBtn);
 
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String name = mName.getText().toString();
-                Log.d(TAG, name);
-                String conditionName = mConditionName.getText().toString();
-                Log.d(TAG,conditionName);
-                String county= mCounty.getText().toString();
-                Log.d(TAG,county);
-                String diagnosisCentre = mDiagnosisCentre.getText().toString();
-                Log.d(TAG,diagnosisCentre);
-                String condition = autoComplete.getText().toString();
+                String name = autoCompleteName.getText().toString();
+                //Log.d(TAG, name);
+                String conditionName = conditionNameAC.getText().toString();
+                //Log.d(TAG,conditionName);
+                String county= countyAC.getText().toString();
+                //Log.d(TAG,county);
+                String diagnosisCentre = diagnosisCentreAC.getText().toString();
+                //Log.d(TAG,diagnosisCentre);
+                String condition = autoCompleteCondition.getText().toString();
                 //Log.d(TAG,condition);
 
                 if(
